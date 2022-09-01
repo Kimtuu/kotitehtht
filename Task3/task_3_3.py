@@ -2,7 +2,7 @@
 # Ohjelma ilmoittaa, onko hemoglobiiniarvo alhainen, normaali vai korkea.
 #Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.
 #Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l
-
+#hg
 gender = input("sukupuolesi (nainen/mies)? ")
 hg_value = int(input("hemoglobiinisi (g/l)?"))
 
