@@ -20,9 +20,8 @@ while tries > 0 :
     if username_input == "python" and password_input == "rules":
         print("Tervetuloa")
         break
-
-     #username_input != username or password_input != password:
-        #print("pääsy evätty")
+    if username_input != "python" or password_input != "rules":
+        print("pääsy evätty")
     tries-=1
 if tries == 0 and username_input != "python" or password_input != "rules":
     print("pääsy evätty")
