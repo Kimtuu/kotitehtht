@@ -1,3 +1,5 @@
+# hytti tehtävä
+
 hytti = str(input("anna hytti:"))
 if hytti == "LUX" :
     print("LUX on parvekkeellinen hytti yläkannella.")
