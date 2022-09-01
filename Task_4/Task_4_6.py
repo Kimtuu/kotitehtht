@@ -1,5 +1,5 @@
 import random
-import math
+
 
 #kysytään nuolia, jotka osuu sisälle
 nuolet_sisällä = int(input("Anna ympyrän sisälle osuneet nuolet:"))
