@@ -2,13 +2,8 @@
 
 kaupungit = []
 
-kaupungit_jäljellä = 5
-
-while kaupungit_jäljellä > 0:
-    kaupunki = str (input("Anna kaupunki:"))
-    kaupungit_jäljellä-=1
+for n in range (5):
+    kaupunki = input("Anna kaupungin nimi:")
     kaupungit.append(kaupunki)
-if kaupungit_jäljellä == 0:
-    for n in kaupungit:
+for n in kaupungit:
         print(n)
-
