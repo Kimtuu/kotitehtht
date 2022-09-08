@@ -11,4 +11,3 @@ while True:
     print(noppa)
     if noppa == silmäluku:
         break
-
