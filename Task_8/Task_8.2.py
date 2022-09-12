@@ -23,3 +23,5 @@ while maa_tunnus != "":
     maa_tunnus = input("Anna maatunnus tai lopeta painamalla Enter:")
 
 print("Kiitos ja näkemiin")
+
+#valmis, kysyy uudestaan ja hyvästelee lopussa :)
