@@ -8,11 +8,11 @@ class Car:
         self.current_speed = current_speed
         self.d_travelled = d_travelled
 
-    def printcar(self):
+    def print_car(self):
         print(self.reg,self.top_speed,self.current_speed,self.d_travelled)
 
 newcar = Car("ABC-123", 142, 0, 0)
 oldcar = Car("LVG-933,", 120, 0, 0)
 
-newcar.printcar()
-oldcar.printcar()
+newcar.print_car()
+oldcar.print_car()
