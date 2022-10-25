@@ -10,9 +10,9 @@ class Car:
         self.tripmeter = 0
 
     def print_info(self):
-        print(f"Auton {self.reg}, "
-              f"huippunopeus on:{self.top_speed}Km/h, "
-              f"matkamittari: {self.tripmeter:.1f}Km, "
+        print(f"Auton {self.reg:6}; "
+              f"huippunopeus on:{self.top_speed:0}Km/h, "
+              f"matkamittari: {self.tripmeter:5}Km, "
               f"Tämän hetkinen nopeus: {self.speed}Km/h")
 
     def accelerate(self, speed_change):
@@ -30,13 +30,10 @@ class Car:
             self.tripmeter = self.tripmeter + (self.speed * hours)
 
 
-# generoidaan 10 autoa
-
 cars = []
 for i in range(10):
     cars.append(Car("ABC-" + str(i + 1), randint(100, 201)))
-    #for car in cars:
-    #    print(car.print_info())
+
 
 for Car in cars:
     while Car.tripmeter <= 10000:
@@ -46,5 +43,5 @@ for Car in cars:
             if Car.tripmeter >= 10000:
                 break
 
-for car in cars:
-    print(car.print_info())
+for Car in cars:
+    Car.print_info()
