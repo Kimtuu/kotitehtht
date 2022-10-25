@@ -34,7 +34,6 @@ cars = []
 for i in range(10):
     cars.append(Car("ABC-" + str(i + 1), randint(100, 201)))
 
-
 for Car in cars:
     while Car.tripmeter <= 10000:
         for Car in cars:
