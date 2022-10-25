@@ -2,17 +2,22 @@
 #ja kuljettu matka
 
 class Car:
-    def __init__ (self, reg, top_speed, current_speed, d_travelled):
+    def __init__ (self, reg, top_speed):
         self.reg = reg
         self.top_speed = top_speed
-        self.current_speed = current_speed
-        self.d_travelled = d_travelled
+        self.current_speed = 0
+        self.d_travelled = 0
 
-    def print_car(self):
-        print(self.reg,self.top_speed,self.current_speed,self.d_travelled)
+    def print_info(self):
+        print(f"Auton {self.reg}, "
+              f"huippunopeus on:{self.top_speed}, "
+              f"matkamittari: {self.d_travelled}, "
+              f"Tämän hetkinen nopeus: {self.current_speed}.")
 
-newcar = Car("ABC-123", 142, 0, 0)
-oldcar = Car("LVG-933,", 120, 0, 0)
+car1 = Car("ABC-123", 142)
+car2 = Car("XYZ-987", 150)
 
-newcar.print_car()
-oldcar.print_car()
+car1.print_info()
+car2.print_info()
+
+
