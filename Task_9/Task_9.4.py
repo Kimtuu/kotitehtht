@@ -7,7 +7,7 @@ class Car:
         self.reg = reg
         self.top_speed = top_speed
         self.speed = 0
-        self.tripmeter = float(0)
+        self.tripmeter = 0
 
     def print_info(self):
         print(f"Auton {self.reg}, "
@@ -35,14 +35,16 @@ class Car:
 cars = []
 for i in range(10):
     cars.append(Car("ABC-" + str(i + 1), randint(100, 201)))
-    # for car in cars:
+    #for car in cars:
     #    print(car.print_info())
 
+for Car in cars:
     while Car.tripmeter <= 10000:
         for Car in cars:
             Car.accelerate(randint(-10, 15))
             Car.travel(1)
-
             if Car.tripmeter >= 10000:
-                for car in cars:
-                    print(Car.print_info())
+                break
+
+for car in cars:
+    print(car.print_info())
