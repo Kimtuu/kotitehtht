@@ -3,7 +3,7 @@ class House:
         self.bottom_floor = bottom_floor
         self.top_floor = top_floor
         self.elevator_number = elevator_number
-        self.elevator = []
+        self.elevators = []
 
     def use_elevator(self, elevator_number, target_floor):
         # TODO: Talon sisällä; mitä hissiä käytetään ja sen kohdekerros
