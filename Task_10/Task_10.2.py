@@ -5,41 +5,8 @@ class House:
         self.elevator_number = elevator_number
         self.elevator = []
 
-
     def use_elevator(self, elevator_number, target_floor):
-
+        # TODO: Talon sisällä; mitä hissiä käytetään ja sen kohdekerros
         pass
 
-
-
-class Elevator:
-    def __init__(self, bottom, top):
-        self.bottom_floor = bottom
-        self.top_floor = top
-        self.current_floor = bottom
-
-    def floor_up(self):
-        if self.current_floor != self.top_floor:
-            self.current_floor = self.current_floor + 1
-            print(f"Moving up to floor:{self.current_floor}")
-        elif self.current_floor >= self.bottom_floor:
-            print("No more floors up that way")
-            # return self.current_floor
-
-    def floor_down(self):
-        if self.current_floor != self.bottom_floor:
-            self.current_floor = self.current_floor - 1
-            print(f"Moving down to floor:{self.current_floor}")
-        elif self.current_floor <= self.bottom_floor:
-            print(f'No more floors down that way')
-            # return self.current_floor
-
-    def move_to_floor(self, floor_number):
-        if self.current_floor > floor_number:
-            while self.current_floor > floor_number:
-                self.floor_down()
-        elif self.current_floor < floor_number:
-            while self.current_floor < floor_number:
-                self.floor_up()
-
-
+# TODO: talon luonti
