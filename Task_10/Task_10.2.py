@@ -5,8 +5,6 @@ class House:
         self.elevator_number = elevator_number
         self.elevator = []
 
-        for i in range(elevator_number):
-            self.elevator.append(Elevator(bottom_floor, top_floor))
 
     def use_elevator(self, elevator_number, target_floor):
 
@@ -44,6 +42,4 @@ class Elevator:
             while self.current_floor < floor_number:
                 self.floor_up()
 
-elevator = Elevator
-talo = House(1, 2, 3)
-print(talo)
+
