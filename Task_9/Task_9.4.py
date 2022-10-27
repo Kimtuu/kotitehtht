@@ -34,6 +34,15 @@ cars = []
 for i in range(1, 11):
     cars.append(Car("ABC-" + str(i), randint(100, 200)))
 
+stop = False
+while not stop:
+    for Car in cars:
+        Car.accelerate(randint(-10, 15))
+        Car.travel(1)
+        if Car.tripmeter >= 10000:
+            stop = True
+            break
+""""
 for Car in cars:
     while Car.tripmeter <= 10000:
         for Car in cars:
@@ -41,6 +50,6 @@ for Car in cars:
             Car.travel(1)
             if Car.tripmeter >= 10000:
                 break
-
+"""
 for Car in cars:
     Car.print_info()
