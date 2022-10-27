@@ -9,16 +9,14 @@ class Elevator:
             self.current_floor = self.current_floor + 1
             print(f"Moving up to floor:{self.current_floor}")
         elif self.current_floor >= self.bottom_floor:
-            print("No more floors up that way")
-            # return self.current_floor
+            print("Can't go higher")
 
     def floor_down(self):
         if self.current_floor != self.bottom_floor:
             self.current_floor = self.current_floor - 1
             print(f"Moving down to floor:{self.current_floor}")
         elif self.current_floor <= self.bottom_floor:
-            print(f'No more floors down that way')
-            # return self.current_floor
+            print("Can't go lower")
 
     def move_to_floor(self, floor_number):
         if self.current_floor > floor_number:
