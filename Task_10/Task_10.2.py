@@ -63,3 +63,4 @@ if __name__ == '__main__':
     talo.use_elevator(1, 2)
     talo.use_elevator(1, 1)
     talo.print_info()
+
