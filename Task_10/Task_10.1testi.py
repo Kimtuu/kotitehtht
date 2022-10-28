@@ -24,7 +24,7 @@ class Elevator:
 
         else:
             if floor_number < self.bottom_floor:
-                print("Can't go that high")
+                print("Can't go that low")
 
             elif floor_number > self.top_floor:
                 print("Can't go that high")
@@ -33,5 +33,6 @@ class Elevator:
 if __name__ == '__main__':
     hissi = Elevator(1,10)
 
-    hissi.move_to_floor(-1)
+    hissi.move_to_floor(2)
+    hissi.move_to_floor(1)
 # infinite loop for print if floor numbers over or under limit?
