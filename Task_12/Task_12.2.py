@@ -18,3 +18,5 @@ try:
               f"Sää: {description}")
 except requests.exceptions.RequestException as e:
     print("hakua ei voitu suorittaa")
+
+# miten voisi tehdä virheellisen inputin errorin :(
