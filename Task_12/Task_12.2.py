@@ -1,4 +1,5 @@
 import requests
+
 # import json
 
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
