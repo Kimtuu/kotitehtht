@@ -23,4 +23,4 @@ try:
         print(f"Kaupunkia: {city}, ei löydy :(")
 
 except requests.exceptions.RequestException as e:
-    print("hakua ei voitu suorittaa")
+    print("hakua ei voitu suorittaa" + str(e))
