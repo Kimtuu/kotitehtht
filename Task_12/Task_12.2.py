@@ -19,7 +19,8 @@ try:
               f"{city}\n"
               f"Lämpötila: {temp}°C\n"
               f"Sää: {description}")
+    elif response.status_code == 404:
+        print(f"Kaupunkia: {city}, ei löydy :(")
+
 except requests.exceptions.RequestException as e:
     print("hakua ei voitu suorittaa")
-
-# miten voisi tehdä virheellisen inputin errorin :(
