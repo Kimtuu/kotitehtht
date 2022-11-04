@@ -14,7 +14,9 @@ try:
         json_response = response.json()
         temp = json_response['main']['temp']
         description = json_response['weather'][0]['description']
-        print(f"{city}\n"
+        country = json_response['sys']['country']
+        print(f"{country}\n"
+              f"{city}\n"
               f"Lämpötila: {temp}°C\n"
               f"Sää: {description}")
 except requests.exceptions.RequestException as e:
