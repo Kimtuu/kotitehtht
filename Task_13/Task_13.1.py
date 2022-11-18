@@ -3,10 +3,8 @@ import flask
 app = flask.Flask(__name__)
 
 
-@app.route('/prime')
-def test_prime():
-    args = flask.request.args
-    number = int(args.get("number"))
+@app.route('/prime/<int:number>')
+def test_prime(number):
     if number > 1:
         for i in range(2, int(number / 2 + 1)):
             if (number % i) == 0:
