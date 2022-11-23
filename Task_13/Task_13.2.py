@@ -26,3 +26,5 @@ def airport_info(icao):
 
 if __name__ == '__main__':
     app.run(use_reloader=True, host='127.0.0.1', port=3000)
+
+    #Appi tuottaa tekstimuodossa vastauksen, korjasin tunnin jälkeen toiseen tiedostoon ohjelman vastaamaan Json muodossa kansio 13.2json
